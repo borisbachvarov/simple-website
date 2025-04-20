@@ -22,6 +22,7 @@ The project emphasizes:
 
 - HTML5
 - CSS3 (vanilla)
+- JS
 - Love and oat milk ☕️
 
 ---

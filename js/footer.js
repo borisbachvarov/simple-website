@@ -4,3 +4,4 @@ document.addEventListener("DOMContentLoaded", function () {
       yearSpan.textContent = new Date().getFullYear();
     }
   });
+  
