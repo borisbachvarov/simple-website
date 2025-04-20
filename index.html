@@ -1,0 +1,179 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ако имаш - остави</title>
+
+    <!-- Bootstrap CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Bundle JS (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Your Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/footer.js"></script>
+    <script src="js/main.js"></script>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon.png">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-tinted">
+            <div class="container-fluid">
+                <!-- Toggler for mobile view -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item me-5">
+                            <a class="nav-link active" aria-current="page" href="index.html">Начало</a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link" href="#">Инфо</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Присъедини се</a>
+                        </li>
+                    </ul>
+
+                    <!-- Language Dropdown pushed to the right -->
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                БГ
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#">BG</a></li>
+                                <li><a class="dropdown-item" href="#">EN</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="overview-hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content text-center">
+            <h1 class="display-4 text-light">Добре дошли в "Ако имаш - остави"</h1>
+            <p class="lead text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="text-light">Повече информация очаквайте скоро. До тогава, ако имаш – остави, ако нямаш – вземи.
+            </p>
+            <a href="#" class="display-5">Присъедини се</a>
+        </div>
+    </section>
+
+
+    <section class="floating-feature-box">
+        <div class="floating-inner">
+            <h2>За каузата</h2>
+            <p>
+                “Ако имаш – остави, ако нямаш – вземи” е инициатива, създадена с цел да насърчи солидарността...
+                “Ако имаш – остави, ако нямаш – вземи” е инициатива, създадена с цел да насърчи солидарността...
+                “Ако имаш – остави, ако нямаш – вземи” е инициатива, създадена с цел да насърчи солидарността...
+                “Ако имаш – остави, ако нямаш – вземи” е инициатива, създадена с цел да насърчи солидарността...
+                “Ако имаш – остави, ако нямаш – вземи” е инициатива, създадена с цел да насърчи солидарността...
+            </p>
+        </div>
+    </section>
+
+    <section class="overview-hero mini-hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content text-center">
+            <h2 class="display-5 text-light mb-5">Как работи?</h2>
+            <div class="row text-light">
+                <div class="col-md-4">
+                    <h5>1. Донеси</h5>
+                    <p>Остави храна, дрехи или други полезни неща в нашите къщички.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>2. Сподели</h5>
+                    <p>Разкажи на приятели, съседи и близки...</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>3. Вземи</h5>
+                    <p>Ако се нуждаеш от нещо, вземи го без притеснение.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <main class="container main-content">
+
+        <section class="info-box">
+            <h2>Къде се намират къщичките?</h2>
+            <p>Очаквайте карта скоро. До тогава, следете нашите <a href="#">социални мрежи</a>.</p>
+        </section>
+
+        <section class="info-box alt-bg">
+            <h2>Стани доброволец</h2>
+            <p>Ако искаш да помогнеш – <a href="#">кандидатствай тук</a>.</p>
+        </section>
+    </main>
+
+
+    <footer class="footer-custom mt-auto">
+        <div class="container py-3 border-top">
+            <div class="row align-items-center">
+
+                <!-- Left: Year & Slogan -->
+                <div class="col-md-4 text-start text-light">
+                    <span>&copy; <span id="year"></span> Ако Имаш - Остави</span>
+                </div>
+
+                <!-- Middle: Contact Info -->
+                <div class="col-md-4 text-center text-light">
+                    <p class="mb-0">info@example.com</p>
+                    <p class="mb-0">+359 987 654 321</p>
+                </div>
+
+                <!-- Right: Social Icons -->
+                <div class="col-md-4 d-flex justify-content-end align-items-center">
+                    <a class="text-light ms-3" href="#" aria-label="Instagram">
+                        <!-- Instagram SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fdfaf6"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M7 2C4.24 2 2 4.24 2 7V17C2 19.76 4.24 22 7 22H17C19.76 22 22 19.76 22 17V7C22 4.24 19.76 2 17 2H7ZM12 7C14.76 7 17 9.24 17 12C17 14.76 14.76 17 12 17C9.24 17 7 14.76 7 12C7 9.24 9.24 7 12 7ZM18 6.5C18.8284 6.5 19.5 5.82843 19.5 5C19.5 4.17157 18.8284 3.5 18 3.5C17.1716 3.5 16.5 4.17157 16.5 5C16.5 5.82843 17.1716 6.5 18 6.5Z" />
+                        </svg>
+                    </a>
+                    <a class="text-light ms-3" href="#" aria-label="Facebook">
+                        <!-- Facebook SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fdfaf6"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M22 12.07C22 6.56 17.52 2 12 2S2 6.56 2 12.07C2 17.1 5.66 21.29 10.44 22V14.89H7.9V12.07H10.44V9.79C10.44 7.28 11.93 5.9 14.21 5.9C15.29 5.9 16.41 6.08 16.41 6.08V8.56H15.06C13.73 8.56 13.33 9.36 13.33 10.19V12.07H16.3L15.84 14.89H13.33V22C18.11 21.29 22 17.1 22 12.07Z" />
+                        </svg>
+                    </a>
+                    <a class="text-light ms-3" href="#" aria-label="X">
+                        <!-- X SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fdfaf6"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M21 3H17.78L13.32 10.2L8.71 3H3.5L10.26 13.62L3.5 21H6.72L11.59 14.5L16.71 21H21L14.06 11.77L21 3Z" />
+                        </svg>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

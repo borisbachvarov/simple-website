@@ -1,0 +1,265 @@
+.navbar-collapse {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-collapse .navbar-nav.mx-auto {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbar {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    background-color: #2d3e2f;
+    margin-bottom: 0;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: #fdfaf6 !important;
+}
+
+.navbar-nav .dropdown-toggle::after {
+    vertical-align: 0.15em;
+}
+
+.navbar .nav-link.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.navbar .nav-link:hover {
+    color: #dbe9d1 !important;
+}
+
+.dropdown-menu {
+    background-color: #f3ede3;
+}
+
+.dropdown-item:hover {
+    background-color: #dbe9d1;
+}
+
+footer {
+    background-color: #2d3e2f;
+    color: #fdfaf6;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.socials svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 1rem;
+    fill: #fdfaf6;
+    cursor: pointer;
+}
+
+.footer-contact p {
+    margin: 0.2rem 0;
+    margin-right: 1rem;
+}
+
+.footer-custom {
+    background-color: #2d3e2f;
+    color: #fdfaf6;
+    font-size: 0.9rem;
+}
+
+.footer-custom svg {
+    fill: #fdfaf6;
+    transition: transform 0.2s ease;
+}
+
+.footer-custom svg:hover {
+    transform: scale(1.1);
+}
+
+html,
+body {
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background-color: #f2e8dc;
+}
+
+body {
+    padding-top: 72px;
+}
+
+main {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.overview-hero {
+    position: relative;
+    background-image: url('../images/wallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin-top: -72px;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(45, 62, 47, 0.7);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 2rem;
+}
+
+.navbar-tinted {
+    background-color: rgba(45, 62, 47, 0.2);
+
+    transition: background-color 0.3s ease;
+    backdrop-filter: blur(6px);
+
+    z-index: 10;
+}
+
+.navbar-scrolled {
+    background-color: rgba(45, 62, 47, 0.9);
+}
+
+.main-content {
+    padding: 2rem 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.main-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #2d3e2f;
+}
+
+.main-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.bg-light {
+    background-color: #fdfaf6;
+}
+
+a {
+    color: #648e55;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #456640;
+}
+
+.info-box {
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    padding: 2rem;
+    margin: 2rem auto;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    max-width: 800px;
+
+}
+
+.info-box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.01);
+}
+
+.alt-bg {
+    background-color: f8f4ee;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.step {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+main.main-content {
+    padding: 3rem 1rem;
+    width: 100%;
+    max-width: none;
+
+}
+
+@media (min-width: 768px) {
+    main.main-content {
+        padding: 4rem 2rem;
+    }
+}
+
+.floating-feature-box {
+    position: relative;
+    z-index: 10;
+    margin-top: -70px; /* Pulls it into the top hero */
+    margin-bottom: 30px; /* Pulls it over the second hero */
+    display: flex;
+    justify-content: center;
+  }
+  
+  .floating-inner {
+    background-color: white;
+    border-radius: 24px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+    padding: 3rem 2rem;
+    max-width: 900px;
+    text-align: center;
+  }
+
+  .mini-hero-section {
+    height: 65vh; /* tweak as you want */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/wallpaper-2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .mini-hero-section .hero-overlay {
+    background-color: rgba(45, 62, 47, 0.7);
+  }
+  
+  .mini-hero-section .hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 2rem;
+  }
+  
+  .mini-hero-section .row > div {
+    padding: 1rem;
+  }
+  
