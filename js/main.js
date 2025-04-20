@@ -8,4 +8,15 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   });
-  
+
+document.addEventListener("DOMContentLoaded", function () {
+  const navLinks = document.querySelectorAll(".nav-link[href^='#']");
+
+  navLinks.forEach(link => {
+    link.addEventListener("click", function () {
+      document.querySelectorAll(".nav-link").forEach(l => l.classList.remove("active"));
+
+      this.classList.add("active");
+    });
+  });
+});

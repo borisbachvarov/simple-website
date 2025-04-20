@@ -11,6 +11,10 @@
 }
 
 .navbar {
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
@@ -87,7 +91,23 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f2e8dc;
+    scroll-behavior: smooth;
 }
+
+[id]::before {
+    content: "";
+    display: block;
+    height: 72px;
+    margin-top: -72px;
+}
+
+#about-anchor {
+    display: block;
+    position: relative;
+    top: -150px; 
+    height: 1px;
+    visibility: hidden;
+  }  
 
 body {
     padding-top: 72px;
@@ -119,12 +139,12 @@ main {
     position: absolute;
     inset: 0;
     background-color: rgba(45, 62, 47, 0.7);
-    z-index: 1;
+    z-index: 0;
 }
 
 .hero-content {
     position: relative;
-    z-index: 2;
+    z-index: 0;
     padding: 2rem;
 }
 
@@ -197,7 +217,7 @@ a:hover {
     flex-wrap: wrap;
     gap: 2rem;
     margin-top: 1.5rem;
-    
+
 }
 
 .step {
@@ -221,24 +241,27 @@ main.main-content {
 
 .floating-feature-box {
     position: relative;
-    z-index: 10;
-    margin-top: -70px; /* Pulls it into the top hero */
-    margin-bottom: 30px; /* Pulls it over the second hero */
+    z-index: 2;
+    margin-top: -70px;
+    margin-bottom: 30px;
     display: flex;
     justify-content: center;
-  }
-  
-  .floating-inner {
+}
+
+.floating-inner {
     background-color: white;
     border-radius: 24px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
     padding: 3rem 2rem;
     max-width: 900px;
     text-align: center;
-  }
 
-  .mini-hero-section {
-    height: 65vh; /* tweak as you want */
+    position: relative;
+    z-index: 1;
+}
+
+.mini-hero-section {
+    height: 65vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -247,20 +270,19 @@ main.main-content {
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    z-index: 1;
-  }
-  
-  .mini-hero-section .hero-overlay {
+    z-index: 0;
+}
+
+.mini-hero-section .hero-overlay {
     background-color: rgba(45, 62, 47, 0.7);
-  }
-  
-  .mini-hero-section .hero-content {
+}
+
+.mini-hero-section .hero-content {
     position: relative;
-    z-index: 2;
+    z-index: 0;
     padding: 2rem;
-  }
-  
-  .mini-hero-section .row > div {
+}
+
+.mini-hero-section .row>div {
     padding: 1rem;
-  }
-  
+}
