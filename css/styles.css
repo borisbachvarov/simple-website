@@ -44,6 +44,14 @@
 
 .dropdown-menu {
     background-color: #f3ede3;
+    padding: 0.25rem 0;
+    min-width: auto;
+    width: auto;
+}
+
+.dropdown-item {
+    padding: 0.25rem 0.75rem;
+    font-size: 0.95rem;
 }
 
 .dropdown-item:hover {
@@ -90,7 +98,7 @@ body {
     height: auto;
     margin: 0;
     padding: 0;
-    background-color: #f2e8dc;
+    background-color: #2d3e2f;
     scroll-behavior: smooth;
 }
 
@@ -104,13 +112,14 @@ body {
 #about-anchor {
     display: block;
     position: relative;
-    top: -150px; 
+    top: -150px;
     height: 1px;
     visibility: hidden;
-  }  
+}
 
 body {
     padding-top: 72px;
+    scroll-behavior: smooth;
 }
 
 main {
@@ -208,7 +217,7 @@ a:hover {
 }
 
 .alt-bg {
-    background-color: f8f4ee;
+    background-color: #f8f4ee;
 }
 
 .steps {
@@ -285,4 +294,12 @@ main.main-content {
 
 .mini-hero-section .row>div {
     padding: 1rem;
+}
+
+.background {
+    background-color: #f2e8dc !important;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

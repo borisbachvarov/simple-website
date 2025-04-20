@@ -14,19 +14,19 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Your Custom Styles -->
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="js/footer.js"></script>
-    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/footer.js"></script>
+    <script src="../js/main.js"></script>
 
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon.png">
 
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg fixed-top navbar-tinted">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-tinted fade-in">
             <div class="container-fluid">
                 <!-- Toggler for mobile view -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -41,7 +41,7 @@
                             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item me-5">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="#about-anchor">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Join us</a>
@@ -51,13 +51,13 @@
                     <!-- Language Dropdown pushed to the right -->
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                БГ
+                            <a id="language-toggle" class="nav-link dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                EN
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end">
-                                <li><a class="dropdown-item" href="#">BG</a></li>
-                                <li><a class="dropdown-item" href="#">EN</a></li>
+                                <li><a class="dropdown-item" href="../index.html" id="lang-bg">BG</a></li>
+                                <li><a class="dropdown-item" href="../en/index.html" id="lang-en">EN</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -66,7 +66,7 @@
         </nav>
     </header>
 
-    <section class="overview-hero">
+    <section class="overview-hero fade-in">
         <div class="hero-overlay"></div>
         <div class="container hero-content text-center">
             <h1 class="display-4 text-light">Welcome to "If you have - give"</h1>
@@ -76,35 +76,46 @@
         </div>
     </section>
 
+    <!--Scroll target-->
+    <div id="about-anchor"></div>
 
-    <section class="floating-feature-box">
-        <div class="floating-inner">
-            <h2>За каузата</h2>
-            <p>
-                “If you have - give, if ou don't - take” is an initiative, created with the intention to encourage solidarity...
-                “If you have - give, if ou don't - take” is an initiative, created with the intention to encourage solidarity...
-                “If you have - give, if ou don't - take” is an initiative, created with the intention to encourage solidarity...
-                “If you have - give, if ou don't - take” is an initiative, created with the intention to encourage solidarity...
-                “If you have - give, if ou don't - take” is an initiative, created with the intention to encourage solidarity...
-                “If you have - give, if ou don't - take” is an initiative, created with the intention to encourage solidarity...
-            </p>
-        </div>
-    </section>
+    <div class="background">
+        <section class="floating-feature-box fade-in">
+            <div class="floating-inner">
+                <h2>About our cause</h2>
+                <p>
+                    “If you have - give, if ou don't - take” is an initiative, created with the intention to encourage
+                    solidarity...
+                    “If you have - give, if ou don't - take” is an initiative, created with the intention to encourage
+                    solidarity...
+                    “If you have - give, if ou don't - take” is an initiative, created with the intention to encourage
+                    solidarity...
+                    “If you have - give, if ou don't - take” is an initiative, created with the intention to encourage
+                    solidarity...
+                    “If you have - give, if ou don't - take” is an initiative, created with the intention to encourage
+                    solidarity...
+                    “If you have - give, if ou don't - take” is an initiative, created with the intention to encourage
+                    solidarity...
+                </p>
+            </div>
+        </section>
+    </div>
 
     <section class="overview-hero mini-hero-section">
         <div class="hero-overlay"></div>
         <div class="container hero-content text-center">
             <h2 class="display-5 text-light mb-5">Goals</h2>
             <div class="row text-light">
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <h5>1. Bring</h5>
                     <p>Leave everything you can bring, food, spare clothes maybe toys.</p>
                 </div>
-                <div class="col-md-3">
-                    <h5>2. SHare</h5>
-                    <p>Share with you friends, familly, neighobours or some of those distant relatives that we all 'love'.</p>
+                <div class="col-md-4">
+                    <h5>2. Share</h5>
+                    <p>Share with you friends, familly, neighobours or some of those distant relatives that we all
+                        'love'.</p>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <h5>3. Take</h5>
                     <p>If you need anything, take it without hesitation.</p>
                 </div>
@@ -112,20 +123,20 @@
         </div>
     </section>
 
+    <div class="background">
+        <main class="container main-content">
 
-    <main class="container main-content">
+            <section class="info-box">
+                <h2>Where are the houses?</h2>
+                <p>Coming soon. Until then, follow our <a href="#">socials</a>.</p>
+            </section>
 
-        <section class="info-box">
-            <h2>Where are the houses?</h2>
-            <p>Coming soon. Until then, follow our <a href="#">socials</a>.</p>
-        </section>
-
-        <section class="info-box alt-bg">
-            <h2>Become a volunteer</h2>
-            <p>If you want to help - <a href="#">join us here</a>.</p>
-        </section>
-    </main>
-
+            <section class="info-box alt-bg">
+                <h2>Become a volunteer</h2>
+                <p>If you want to help - <a href="#">join us here</a>.</p>
+            </section>
+        </main>
+    </div>
 
     <footer class="footer-custom mt-auto">
         <div class="container py-3 border-top">
