@@ -93,6 +93,32 @@ footer {
     transform: scale(1.1);
 }
 
+.footer-left {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    opacity: 0.85;
+}
+
+.footer-left a {
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.footer-right a svg {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.2s ease;
+}
+
+.footer-right a:hover svg {
+    transform: scale(1.1);
+}
+
+.footer-left span {
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
 html,
 body {
     height: auto;
@@ -302,4 +328,9 @@ main.main-content {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.navbar-brand img {
+    max-height: 60px;
+    max-width: 300px;
 }
