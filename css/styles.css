@@ -148,6 +148,20 @@ body {
     scroll-behavior: smooth;
 }
 
+h1,
+h2,
+h3,
+a,
+li {
+    font-family: 'Comfortaa', cursive;
+}
+
+body,
+p {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+
 main {
     padding: 2rem 1rem;
     max-width: 800px;
