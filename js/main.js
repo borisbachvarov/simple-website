@@ -31,3 +31,9 @@ document.addEventListener("DOMContentLoaded", function () {
     langToggle.textContent = "БГ";
   }
 });
+
+const bg = new Image();
+bg.src = '../images/wallpaper.jpg';
+bg.onload = () => {
+  document.querySelector('.overview-hero').style.backgroundImage = "url('../images/wallpaper.jpg')";
+};
