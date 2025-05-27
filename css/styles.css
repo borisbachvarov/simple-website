@@ -1,13 +1,27 @@
 .navbar-collapse {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
-.navbar-collapse .navbar-nav.mx-auto {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+@media (min-width: 992px) { 
+    .navbar > .container-fluid {
+        position: relative;
+    }
+
+    .navbar-collapse .navbar-nav.mx-auto {
+        position: absolute;
+        left: 45%;
+        top: 55%; 
+        transform: translate(-50%, -50%); 
+        margin: 0 !important; 
+    }
+
+    .navbar-brand {
+        z-index: 1; 
+    }
+    .navbar-nav.ms-auto {
+        z-index: 1; 
+    }
 }
 
 .navbar {
@@ -40,6 +54,11 @@
 
 .navbar .nav-link:hover {
     color: #dbe9d1 !important;
+}
+
+.navbar-toggler {
+    position: relative; 
+    z-index: 1;       
 }
 
 .dropdown-menu {
@@ -151,6 +170,8 @@ body {
 h1,
 h2,
 h3,
+h5,
+h6,
 a,
 li {
     font-family: 'Comfortaa', cursive;
@@ -171,7 +192,7 @@ main {
 
 .overview-hero {
     position: relative;
-    background-image: url('../images/wallpaper.jpg');
+    background-image: url('../images/IMG_5922.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -195,6 +216,7 @@ main {
     position: relative;
     z-index: 0;
     padding: 2rem;
+
 }
 
 .navbar-tinted {
@@ -286,15 +308,38 @@ main.main-content {
     main.main-content {
         padding: 4rem 2rem;
     }
+
+    .floating-feature-box {
+        margin-top: 2rem;        
+        margin-bottom: 3rem;
+        padding-left: 1.5rem;   
+        padding-right: 1.5rem;
+    }
+
+    .floating-inner {
+        padding: 2rem 1rem;
+        border-radius: 18px;   
+    }
+
+    .mini-hero-section {
+        padding-top: 4rem;       
+    }
+
+    .mini-hero-section .hero-content {
+        padding: 1.5rem 0.5rem;
+    }
+
 }
 
 .floating-feature-box {
     position: relative;
     z-index: 2;
     margin-top: -70px;
-    margin-bottom: 30px;
+    margin-bottom: 4rem;
     display: flex;
     justify-content: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .floating-inner {
@@ -304,17 +349,19 @@ main.main-content {
     padding: 3rem 2rem;
     max-width: 900px;
     text-align: center;
-
+    width: 100%;
     position: relative;
     z-index: 1;
+    box-sizing: border-box;
 }
 
 .mini-hero-section {
-    height: 65vh;
+    min-height: 65vh;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('../images/wallpaper-2.jpg');
+    background-image: url('../images/IMG_5928.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -347,4 +394,25 @@ main.main-content {
 .navbar-brand img {
     max-height: 60px;
     max-width: 300px;
+}
+
+.hero-btn {
+    background-color: #648e55;
+    color: #fdfaf6 !important;
+    border: none;
+    padding: 0.6rem 1.5rem;
+    border-radius: 30px;
+    font-size: 2rem; /* same as .display-5 */
+    font-family: 'Comfortaa', cursive;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero-btn:hover {
+    background-color: #456640;
+    transform: translateY(-2px);
+    color: #fdfaf6 !important;
 }
